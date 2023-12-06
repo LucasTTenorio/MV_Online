@@ -1,11 +1,11 @@
-MV Online Core Documentation
+Documentação Principal MV Online
 ==========================
 
-Requirements
+Requisitos
 -------------
-Node.js and RPGMaker MV
+Node.js e RPGMaker MV
 
-Installation
+Instalação
 -------------
 
 Deploy to Heroku here:
