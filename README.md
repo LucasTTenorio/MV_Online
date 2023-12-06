@@ -8,45 +8,45 @@ Node.js e RPGMaker MV
 Instalação
 -------------
 
-Deploy to Heroku here:
+Deploy na Heroku aqui:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Nelderson/MV_Online/tree/master)
 
-Use `git clone https://github.com/LucasTTenorio/MV_Online.git` or download and unzip to the directory of your choice.
+Usar `git clone https://github.com/LucasTTenorio/MV_Online.git` ou baixe e descompacte para o diretório de sua escolha.
 
-Run `npm install` to download all dependencies for the server. Use `npm install -d` for windows users
+Run `npm install` para baixar todas as dependências do servidor. Usar `npm install -d` para usuários do Windows.
 
-After configuring the server run `npm start` to start the server
+Depois de configurar o servidor run `npm start` para iniciar o servidor.
 
 
-Server Configuration
+Configuração do Servidor
 -------------
 
-Inside the  `server/configurations/config.js` file, there are several things to configure:
+Dentro do `configurations/config.js` arquivo, há várias coisas para configurar:
 
-`port` defines which port the server will run on (Default `8000`)
+`port` define em qual porta o servidor será executado (Padrão `8000`)
 
-`jwtSecret` defines the secret the JWT is signed.  Please change this for security reasons in a production environment
+`jwtSecret` define o segredo que o JWT está assinado.  Altere isso por motivos de segurança em um ambiente de produção
 
-`firstHash` is the initial hashing secret for login system.  This is the same as the client plugin first hash.  Recommended that this be changed before putting in a production environment
-
-
-`mailFrom` when a user registers they recieve an email from this address.
-`smtps://username@gmail.com:password@smtp.gmail.com`  (Additional steps are required if you want to use gmail.)
-
-`mongoDBconnect` Link and credentials to MongoDB Database. `mongodb://username:password@linktomongodb.com:39504/collection`
+`firstHash` é o segredo de hash inicial para o sistema de login.  Isso é o mesmo que o primeiro hash do plugin do cliente.  Recomendado que isso seja alterado antes de colocar em um ambiente de produção
 
 
-Client Configuration (RPGMaker MV)
+`mailFrom` Quando um usuário se registra, ele recebe um e-mail desse endereço.
+`smtps://username@gmail.com:password@smtp.gmail.com`  (Etapas adicionais são necessárias se você quiser usar o Gmail.)
+
+`mongoDBconnect` Link e credenciais para o banco de dados MongoDB. `mongodb://username:password@linktomongodb.com:39504/collection`
+
+
+Configuração do Cliente (RPGMaker MV)
 -------------
 
-Add the `css` folder to the root of your project directory
+Adicione o `css` na raiz do diretório do projeto
 
-Add the files in `game_resources/js/plugns` that you want for your plugins to your own `js/plugins` folder of your game. (`Online_Main_Core.js` is manditory for all other plugins)
+Adicione os arquivos em `game_resources/js/plugns` que você quer para seus plugins para o seu próprio `js/plugins` do seu jogo. (`Online_Main_Core.js` é manditory para todos os outros plugins)
 
-Add the files from the `game_resources/js/libs` folder to your own `js/libs` folder
+Adicione os arquivos do `game_resources/js/libs` pasta para o seu próprio `js/libs` pasta
 
-Modify your `index.html` file in your game to add this in the header:
+Modifique seu `index.html` no seu jogo para adicionar isso no cabeçalho:
 
 ```html
 <!-- Nel Add -->
@@ -56,7 +56,7 @@ Modify your `index.html` file in your game to add this in the header:
 <!-- Nel Add -->
 ```
 
-And this in the body, dont forget the change localhost for your IP or Domain :
+E isso no corpo, não se esqueça da mudança localhost para o seu IP ou Domínio:
 
 ```html
 <!-- Nel Add -->
